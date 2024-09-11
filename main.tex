@@ -1,0 +1,107 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{multimedia}
+\usepackage{media9}
+\usepackage{amsmath,amssymb}
+\usepackage{courier}
+\usepackage{pdfpages}
+\usepackage{listings}
+
+\newcommand{\codetilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\lstset{ 
+  basicstyle=\ttfamily\small,        % the size of the fonts that are used for the code
+  breaklines=true,                 % sets automatic line breaking
+  commentstyle=\color{codegreen},    % comment style
+  firstnumber=1,                % start line enumeration with line 1000
+%   frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{magenta},       % keyword style
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=10pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{gray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+%   stringstyle=\color{custommauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\setbeamersize{text margin left=10mm,text margin right=10mm} 
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate\hspace*{3em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatletter
+
+
+\title{ECE244: Programming Fundamentals}
+\subtitle{Tutorial 01: C review, C++}
+\author{
+    Michail Bachras -- michalis.bachras@mail.utoronto.ca \\
+    Louis He -- siwei.he@mail.utoronto.ca \\
+    Yvonne Yang -- yvon.yang@mail.utoronto.ca \\
+    Yi Fan Yu -- yiyu.yu@mail.utoronto.ca\textsuperscript{1}
+}
+\date{}
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+% \footnote{
+%     \tiny{
+%         Slides heavily borrowed from previous Fall22 TA:\\
+%         Sitao Wang -- sitao.wang@mail.utoronto.ca,
+%         Devin Gibson -- devin.gibson@mail.utoronto.ca
+%     }
+% }
+
+\footnotetext[1]{Heavily Borrowed from previous Fall22 TAs Devin Gibson \& Sitao Wang}
+\end{frame}
+\begin{frame}{Tutorial sections}
+    Total of 8 sections for tutorials, around 60 students in each tutorial section.
+    \begin{itemize}
+        \item Louis:
+        \begin{itemize}
+            \item TUT101 W 4PM @\textit{GB303}
+            \item TUT105 TH 2PM @\textit{BA1130}
+        \end{itemize}
+        \item Michail:
+        \begin{itemize}
+            \item TUT102 W 4PM @\textit{MB128}
+            \item TUT106 TH 2PM @\textit{HA403} 
+        \end{itemize}
+        \item Yvonne:
+        \begin{itemize}
+            \item TUT103 F 9AM @\textit{BA1200}
+            \item TUT107 TH 9AM @\textit{GB244} 
+        \end{itemize}
+        \item Yi Fan:
+        \begin{itemize}
+            \item TUT104 F 9AM @\textit{GB119}
+            \item TUT108 TH 9AM @\textit{GB248} 
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+    
+
+\input{tut1.tex}
+
+\end{document}
